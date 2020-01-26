@@ -13,7 +13,8 @@ BugReports: https://github.com/ttriche/miser/issues
 License: GPL-3
 Depends:
     minfi,
-    R (>= 3.0.0)
+    dbscan,
+    R (>= 3.6.0)
 Imports:
     limma,
     sesame,
