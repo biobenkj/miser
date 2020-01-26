@@ -4,7 +4,11 @@
 \alias{getGSMs}
 \title{fetch supplemental data (IDATs) for a given dataset}
 \usage{
-getGSMs(GSMs, cachePath = NULL)
+getGSMs(
+  GSMs,
+  cachePath = NULL,
+  metadb.path = "https://gbnci-abcc.ncifcrf.gov/geo/GEOmetadb.sqlite.gz"
+)
 }
 \arguments{
 \item{GSMs}{a vector of GEO sample IDs}
