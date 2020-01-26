@@ -26,7 +26,7 @@ addCharacteristics <- function(x, column="subject",titles=TRUE,cachePath=NULL) {
   cacheFile <- paste(cachePath, "GEOmetadb.sqlite", sep="/")
   if (!file.exists(cacheFile)) {
     message("Could not find GEOmetadb database in cachePath...") 
-    stop("Please redownload or move the GEOmetadb.sqlite back into cachePath with getGSMs().)
+    stop("Please redownload or move the GEOmetadb.sqlite back into cachePath with getGSMs().")
   }
   con <- dbConnect(RSQLite::SQLite(), cacheFile)
   query <- paste0("SELECT gsm, characteristics_ch1 FROM gsm WHERE gsm IN ('",
