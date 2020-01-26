@@ -26,7 +26,8 @@ Imports:
     HDF5Array,
     DelayedArray,
     ComplexHeatmap,
-    DelayedMatrixStats
+    DelayedMatrixStats,
+    GEOquery
 Suggests:
     covr,
     erma, 
